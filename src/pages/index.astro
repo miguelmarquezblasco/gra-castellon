@@ -1,0 +1,30 @@
+---
+import Header from '../layouts/Header.astro';
+import Footer from '../layouts/Footer.astro';
+import Adoption from '../layouts/Adoption.astro';
+import Collaborate from '../layouts/Collaborate.astro';
+
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#DC8B7A">
+  <meta name="description" content="GRA: Grupo de Rescate y Adopciones de Castellón. Entidad sin ánimo de lucro que trabaja para construir un mundo mejor para los peluditos.">
+  <title>GRA: Grupo de Rescate y Adopciones de Castellón</title>
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+</head>
+<body class="bg-custom-gradient">
+  <Header />
+  <main class="container mx-auto p-4">
+    <Adoption />
+    <Collaborate />
+  </main>
+  <Footer />
+</body>
+</html>

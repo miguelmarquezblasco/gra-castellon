@@ -1,0 +1,43 @@
+---
+const socialLinks = [
+  { name: "+34 674 30 92 06", url: "https://wa.me/34674309206", icon: "whatsapp.svg" },
+  { name: "gragruporescatesyadopcionescs@gmail.com", url: "mailto:gragruporescatesyadopcionescs@gmail.com", icon: "email.svg" },
+  { name: "@gragrupoderescatesyadopcionescastellon", url: "https://www.teaming.net/gragrupoderescatesyadopcionescastellon?lang=es_ES", icon: "teaming.webp"},
+  { name: "Gragrupoderescatesyadopcionesencastellon", url: "https://www.facebook.com/Gragrupoderescatesyadopcionesencastellon/?locale=es_ES", icon: "facebook.svg" },
+  { name: "@gragrupoderescatesyadopciones", url: "https://www.instagram.com/gragrupoderescatesyadopciones/?hl=es", icon: "instagram.svg" },
+];
+
+const mapUrl = "https://www.google.com/maps?q=40.15442,0.045&z=12&output=embed";
+---
+
+<footer class="bg-[#E2B02950]">
+  <div class="container mx-auto p-4 flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
+    <div class="flex flex-col items-center lg:items-start lg:flex-1">
+      {socialLinks.map((link) => (
+        <a href={link.url} class="flex items-center text-gray-500 hover:text-[#DC8B7A] transition-transform hover:scale-105 mb-2" aria-label={link.name}>
+          <img src={`/images/${link.icon}`} alt={link.name} class="h-6 mr-2" loading="lazy" />
+          <span>{link.name}</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="lg:flex-1 text-center text-gray-500 p-4 m-4">
+      <p>
+        GRA, nace de la unión de un grupo de personas particulares con una misma labor en común: rescatar animales en peligro, rehabilitarlos y buscarles un hogar.
+        Grupo GRA es una asociación oficial, GRA se mantiene de las aportaciones solidarias de la gente.
+        Los miembros de GRA son personas particulares que ayudan y difunden todo tipo de casos, rescatan a cuantos animales pueden y se encargan de buscarles un hogar definitivo.
+      </p>
+    </div>
+
+    <div class="lg:flex-1 flex justify-center p-4 lg:order-2">
+      <iframe 
+        src={mapUrl} 
+        width="100%" 
+        height="200" 
+        class="w-full md:w-80 lg:w-96 rounded-lg"
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</footer>

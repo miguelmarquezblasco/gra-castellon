@@ -1,0 +1,40 @@
+---
+import Button from '../components/Button.astro'; 
+---
+
+<section class="mb-4 p-4 border-b border-gray-200 flex flex-col items-center">
+    <h3 class="text-xl font-bold text-gray-800 mb-4 pb-4 text-center">Condiciones para adoptar</h3>
+  
+    <div class="flex flex-col md:flex-row items-start mb-6 bg-[#DC8B7A25] rounded-lg shadow-md max-w-5xl">
+        <img src="/images/dog.webp" alt="Perro" class="w-full md:w-1/2 lg:w-1/3 h-auto object-cover m-4" />
+        <div class="flex-1 p-4">
+            <p class="text-gray-600 mb-4">
+            Todos nuestros animales se entregan con contrato de adopción firmado por ambas partes, compromiso de seguimiento por parte de la protectora y compromiso de esterilización.
+            </p>
+            <p class="text-gray-600 mb-4">
+            El adoptante cumplimentará un formulario y pasará la entrevista por la persona encargada de las adopciones para comprobar si es apto para la adopción.
+            </p>
+        </div>
+    </div>
+  
+    <div class="flex flex-col md:flex-row items-start justify-end mb-6 bg-[#DC8B7A25] rounded-lg shadow-md max-w-5xl">
+        <div class="flex-1 p-4">
+            <p class="text-gray-600 mb-4">
+            A la entrega de la adopción se abonará la cantidad de 200 euros para machos y 250 euros para hembras con lo que se cubren los siguientes gastos:
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>4 vacunas</li>
+            <li>Microchip y pasaporte</li>
+            <li>Revisión veterinaria con cada vacunación</li>
+            <li>Esterilización</li>
+            </ul>
+        </div>
+        <img src="/images/cat.webp" alt="Gato" class="w-1/2 md:w-1/4 lg:w-1/6 h-auto object-cover m-4" />
+    </div>
+  
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-center space-y-4 md:space-y-0 md:space-x-4 mb-4 pb-6 max-w-5xl">
+        <Button url="https://forms.gle/ZimY4o7hYFBKStHV8" text="Formulario de adopción PERRO 🐶" />
+        <Button url="https://forms.gle/K6RcjPRuZoRRiVZx5" text="Formulario de adopción GATO 🐱" />
+    </div>
+    <p class="text-gray-600 pb-6 text-center">Para cualquier información o dudas, puedes contactar en el teléfono <strong>674309206</strong></p>
+</section>  
