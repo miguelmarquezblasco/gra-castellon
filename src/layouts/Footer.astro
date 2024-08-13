@@ -15,7 +15,7 @@ const mapUrl = "https://www.google.com/maps?q=40.15442,0.045&z=12&output=embed";
     <div class="flex flex-col items-center lg:items-start lg:flex-1">
       {socialLinks.map((link) => (
         <a href={link.url} class="flex items-center text-gray-500 hover:text-[#DC8B7A] transition-transform hover:scale-105 mb-2" aria-label={link.name}>
-          <img src={`/images/${link.icon}`} alt={link.name} class="h-6 mr-2" loading="lazy" />
+          <img src={`/images/${link.icon}`} alt={link.name} class="mr-2" width="24" height="24" loading="lazy" />
           <span>{link.name}</span>
         </a>
       ))}
@@ -30,14 +30,15 @@ const mapUrl = "https://www.google.com/maps?q=40.15442,0.045&z=12&output=embed";
     </div>
 
     <div class="lg:flex-1 flex justify-center p-4 lg:order-2">
-      <iframe 
-        src={mapUrl} 
-        width="100%" 
-        height="200" 
-        class="w-full md:w-80 lg:w-96 rounded-lg"
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <a href="https://www.google.com/maps?q=40.15442,0.045&z=12" target="_blank" rel="noopener noreferrer">
+        <img 
+          src="/images/map.webp" 
+          alt="Cabanes, Castellón, España" 
+          class="h-auto rounded-lg hover:opacity-75 transition-opacity duration-300" 
+          loading="lazy"
+          width="300"
+        />
+      </a>
     </div>
   </div>
 </footer>
